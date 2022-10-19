@@ -26,14 +26,17 @@
 
 .logo {
     display:flex;
+    align-items: center;
+    gap:5px;
+    text-shadow: 0 0 5px black;
+
 }
 
 .logo img {
-    height:34px;
-    width:34px;
+    height:30px;
+    width:30px;
     color:white;
 }
-
 
 .nav {
     display:grid;
@@ -44,6 +47,11 @@ a {
     text-decoration: none;
     color:white;
     font-size: 20px;
+    text-shadow: 0 0 5px black;
+}
+
+a:hover {
+    text-decoration: underline;
 }
 
 .branding {
@@ -59,14 +67,45 @@ a {
 .header {
     grid-row: 1 / 2;
     display:grid;
-    grid-template-columns: 1fr 1fr;
-    border:1px solid black;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    padding:15px;
+}
+
+.header img,.content img {
+    height:17px;
+    width:17px;
 }
 
 .header input {
-    width:100%;
+    width:90%;
     border-radius:10px;
     background-color: rgb(241, 239, 239);
+    height:25px;
+}
+
+form {
+    padding:15px; 
+}
+
+.search {
+    grid-column:1 / 2;
+    grid-row:1 / 2;
+}
+
+.welcome {
+    grid-column:1 / 2;
+    grid-row:2 / 3;
+}
+
+.profile {
+    grid-column:2 / 3;
+    grid-row:1 / 2;
+}
+
+.commands {
+    grid-column:2 / 3;
+    grid-row:2 / 3;
 }
 
 .content {
