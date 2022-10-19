@@ -22,6 +22,7 @@
     align-content: flex-start;
     gap:50px;
     padding:20px;
+    border-right:1px solid black;
 }
 
 .logo {
@@ -73,19 +74,22 @@ a:hover {
 }
 
 .header img,.content img {
-    height:17px;
-    width:17px;
+    height:20px;
+    width:20px;
 }
 
 .header input {
     width:90%;
     border-radius:10px;
-    background-color: rgb(241, 239, 239);
+    background-color: rgb(200, 197, 197);
     height:25px;
+    border:none;
+    margin-left: 10px;
 }
 
 form {
     padding:15px; 
+    display:flex;
 }
 
 .search {
@@ -96,16 +100,39 @@ form {
 .welcome {
     grid-column:1 / 2;
     grid-row:2 / 3;
+    display:flex;
+    align-items: center;
+    /* justify-content: center; */
+}
+
+.welcome img {
+    height:60px;
+    width:60px;
+    border-radius: 100%;
 }
 
 .profile {
     grid-column:2 / 3;
     grid-row:1 / 2;
+    display:flex;
+    justify-content: center;
 }
 
 .commands {
     grid-column:2 / 3;
     grid-row:2 / 3;
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: space-around;
+}
+
+.commands button {
+    height:35px;
+    width:90px;
+    border-radius:15px;
+    border:none;
+    background-color: rgb(85, 142, 249);
+    color:white;
 }
 
 .content {
