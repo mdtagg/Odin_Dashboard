@@ -155,7 +155,8 @@ form {
 /*Content section*/
 
 .content {
-    grid-row: 2 / 3;
+    grid-column:2 / 3;
+    grid-row:2 / 3;
     display: grid;
     grid-template-columns: 2fr 1fr;
     grid-template-rows: 1fr 10fr 10fr;
@@ -163,10 +164,8 @@ form {
 }
 
 .projects-title {
-    grid-column: 1/2;
     grid-row:1/2;
     padding-left: 20px;
-    padding-top:20px;
     font-weight:800;
 }
 
@@ -208,37 +207,24 @@ form {
 }
 
 .announcements {
-    /* grid-column:2/3;
-    grid-row:1/2; */
-    /* border:1px solid black; */
-    /* padding-left:20px; */
+    grid-column:2/3; 
+    padding-left:20px;
 }
 
 .announcements-title {
-    grid-column:2/3;
-    grid-row:1/2;
-    display: flex;
-    flex-direction: column;
-    justify-content:center;
+    grid-row:1/2; 
+    padding-left: 20px;
     font-weight: 800;
-    padding:20px;
 }
 
 .announcements-card {
-    grid-column:2 / 3;
-    grid-row: 2 / 3;
-    padding:20px;
-    margin-left:20px;
-    display:flex;
-    flex-direction: column;
     background-color: white;
     box-shadow:  0 0 2px black;
     border-radius:5px;
     margin-right:20px;
-    /* border:1px solid black; */
 }
 
 .trending {
     grid-column: 2 / 3;
-    grid-row: 3/4;
+    grid-row: 3/4; 
 }
