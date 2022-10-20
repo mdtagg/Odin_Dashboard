@@ -159,13 +159,14 @@ form {
     grid-row:2 / 3;
     display: grid;
     grid-template-columns: 2fr 1fr;
-    grid-template-rows: 1fr 10fr 10fr;
+    grid-template-rows: 1fr 5fr 5fr;
     background-color: rgb(232, 229, 229);
 }
 
 .projects-title {
     grid-row:1/2;
     padding-left: 20px;
+    padding-top:10px;
     font-weight:800;
 }
 
@@ -214,6 +215,7 @@ form {
 .announcements-title {
     grid-row:1/2; 
     padding-left: 20px;
+    padding-top:10px;
     font-weight: 800;
 }
 
@@ -227,4 +229,48 @@ form {
 .trending {
     grid-column: 2 / 3;
     grid-row: 3/4; 
+    font-weight:800;
+    margin-left:20px;
+    padding-top:10px;
 }
+
+.trending p {
+    /* padding-bottom:10px; */
+}
+
+.announcements-card p{
+    padding:10px;
+}
+
+.trending-cards-container {
+    display:flex;
+    flex-direction: column;
+    background-color: white;
+    font-weight: 500;
+    margin-right:20px;
+    border-radius:5px;
+    font-size:12px;
+    box-shadow:  0 0 2px black;
+    /* align-items: center;
+    justify-content: center; */
+}
+
+.trending-card {
+    display:flex;
+    padding:10px;
+    align-items: center;
+}
+
+.trending-image img {
+    height:30px;
+    width:30px;
+    
+}
+
+.trending-info {
+    margin-left:20px;
+}
+
+/* .announcements-card > *div:last-child{
+    padding:15px;
+} */
